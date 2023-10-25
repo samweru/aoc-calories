@@ -33,5 +33,12 @@ list.forEach(function(item, idx){
 });
 
 totals = totals.sort(function(a, b){return b - a});//Sort By descending order
-console.log(totals);
+console.log("Elf carrying most calories: " + totals[0]); 
 
+module.exports = {
+
+	getTotals:function(){
+
+		return totals;
+	}
+}
