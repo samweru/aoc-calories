@@ -26,9 +26,8 @@ fs.readFile('list.txt', function(err, data) {
     	}
    	}
 
-   	totals = totals.sort(function(a, b){return b - a});
-   	// console.log(totals)
-   	console.log("Elf carrying most calories: " + totals[0]); //Sort By descending order
+   	totals = totals.sort(function(a, b){return b - a});//Sort By descending order
+   	console.log("Elf carrying most calories: " + totals[0]); 
    	console.log("Total calories of top 3 Elves: " + totals.splice(0,3).reduce(function(a, b){
 
    		return a+b;
