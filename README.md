@@ -11,6 +11,7 @@ NodeJS `v12.22.9`
 
 ```sh
 js part1.js
+js part2.js
 ```
 
 ### Logic
@@ -21,6 +22,7 @@ by new line `\n`
 for the next section.
  - At the end a `totals` list is sorted by descending order.
  - Top most figure has most calories.
+ - Part 2: `totals` list is spliced, reduced and summed to get total calories for top 3 elves.
 
 
 
