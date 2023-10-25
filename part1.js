@@ -10,7 +10,7 @@ list.forEach(function(item, idx){
 	
 		//simple validations
 		item = item.trim().trim("\n");
-		if(!Number.isInteger(parseInt(item)) && item.length !== 0)
+		if(!/^[0-9]+$/.test(item) && item.length !== 0)
 			throw new Error("Malformed Input: "+item);
 
 		//sum section items
