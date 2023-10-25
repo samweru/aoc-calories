@@ -6,15 +6,29 @@ var totals = [];
 
 list.forEach(function(item, idx){
 
-	item = parseInt(item.trim());
+	try{
+	
+		//simple validations
+		item = item.trim().trim("\n");
+		if(!Number.isInteger(parseInt(item)) && item.length !== 0)
+			throw new Error("Malformed Input: "+item);
+
+		//sum section items
+		item = parseInt(item);
 		if(!isNaN(item))
-			sum += item;
+		  sum += item;
 
-	//skip empty lines and store section total
-	if(isNaN(item)){
+		//skip empty lines and store section total
+		if(isNaN(item)){
 
-		totals.push(sum);
-		sum = 0; //reset sum
+			totals.push(sum);
+			sum = 0; //reset sum
+		}
+	}
+	catch(err){
+
+		console.log(err.message);
+		process.exit(1);
 	}
 });
 
