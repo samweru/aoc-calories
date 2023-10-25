@@ -26,5 +26,13 @@ js part2.js list.txt
 	 - Top most figure has most calories.
  - Part 2: `totals` list is spliced, reduced and summed to get total calories for top 3 elves.
 
+### Note
+
+`part2.js` depends on `part1.js` which depends on `datasource.js`
+
+![Javascript Pixar](js.jpeg "javascript monster")
+
+
+
 
 
