@@ -1,0 +1,9 @@
+{
+  "name": "fruit",
+  "version": "1.0.0",
+  "description": "Fruit Inventory",
+  "main": "index.js",
+  "author": "Samuel Weru",
+  "license": "MIT",
+  "private": true
+}
